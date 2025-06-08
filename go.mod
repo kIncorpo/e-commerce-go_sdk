@@ -1,4 +1,4 @@
-module gin
+module github.com/kIncorpo/e-commerce-go_sdk
 
 go 1.24.3
 
