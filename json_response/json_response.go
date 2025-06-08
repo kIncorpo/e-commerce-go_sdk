@@ -15,6 +15,7 @@ func Success(ctx *gin.Context, data interface{}) {
 		Message: "success",
 		Data:    data,
 	})
+	panic(nil)
 }
 
 func Error(ctx *gin.Context, httpCode int, code string, message string, err interface{}) {
@@ -24,4 +25,5 @@ func Error(ctx *gin.Context, httpCode int, code string, message string, err inte
 		Data:    "",
 		Error:   err,
 	})
+	panic(nil)
 }
