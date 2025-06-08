@@ -21,7 +21,7 @@ func Error(ctx *gin.Context, httpCode int, code string, message string, err inte
 	ctx.JSON(httpCode, APIResponse{
 		Code:    code,
 		Message: message,
-		Data:    nil,
+		Data:    "",
 		Error:   err,
 	})
 }
