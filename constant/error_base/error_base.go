@@ -1,4 +1,4 @@
-package error
+package error_base
 
 import "net/http"
 
@@ -24,7 +24,7 @@ var (
 	ErrValidationFailed = AppError{
 		HttpCode: http.StatusBadRequest,
 		Code:     "4001",
-		Message:  "Validation error occurred",
+		Message:  "Validation error_base occurred",
 	}
 
 	ErrInternalServer = AppError{
